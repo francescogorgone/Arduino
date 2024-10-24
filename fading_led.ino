@@ -3,7 +3,6 @@ int brightness = 0; // how bright the LED is
 int fadeAmount = 5; // how many points to fade the LED by
 void setup() {
 pinMode(ledPin, OUTPUT); // declare ledPin to be an output
-
 }
 void loop() {
 analogWrite(ledPin, brightness); // set the brightness of ledPin
@@ -13,4 +12,3 @@ fadeAmount = -fadeAmount; // reverse the direction of the fading at the ends of 
 }
 delay(30); // wait for 30 milliseconds to see the dimming effect
 }
-
